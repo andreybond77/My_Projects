@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Андрей Бондарчук — Инженер / Python-разработчик / QA</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+      --gray: #95a5a6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+      padding: 20px;
+    }
+
+    .resume {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--secondary);
+      margin: 30px 0 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--secondary);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      font-size: 0.95rem;
+    }
+
+    .contact-info a {
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .contact-info a:hover {
+      opacity: 0.8;
+    }
+
+    .section {
+      padding: 30px;
+    }
+
+    .section p, .section ul {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .education-item, .experience-item, .course-item {
+      margin-bottom: 25px;
+    }
+
+    .date {
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill-tag {
+      background: var(--light);
+      color: var(--dark);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .skill-tag.tech {
+      background: #e3f2fd;
+      color: #1565c0;
+    }
+
+    .skill-tag.soft {
+      background: #f3e5f5;
+      color: #6a1b9a;
+    }
+
+    .about {
+      font-style: italic;
+      background: #f9f9f9;
+      padding: 20px;
+      border-left: 4px solid var(--secondary);
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--dark);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <h1>Андрей Анатольевич Бондарчук</h1>
+      <div class="subtitle">Инженер → Python-разработчик → QA / Тестировщик ПО</div>
+      <div class="contact-info">
+        <div>📱 +7 (908) 503-77-59</div>
+        <div>✉️ <a href="mailto:andreybond77@mail.ru">andreybond77@mail.ru</a></div>
+        <div>🌐 <a href="https://github.com/andreybond77" target="_blank">github.com/andreybond77</a></div>
+        <div>📍 Ростов-на-Дону</div>
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>🎯 Обо мне</h2>
+      <p class="about">
+        Опытный инженер, обладающий глубоким пониманием технологических процессов, управления качеством и оптимизации ресурсов. В настоящее время активно осваиваю IT-направления — программирование (Python, JS), тестирование ПО, веб-разработку — чтобы применить навыки анализа, системного мышления и документирования в сфере телекоммуникаций и IT-инфраструктуры. Вижу себя ценным специалистом на стыке инженерных и IT-компетенций.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Образование</h2>
+
+      <div class="education-item">
+        <strong>Донской государственный технический университет</strong><br>
+        <em>Инженер по специальности "Технология машиностроения"</em><br>
+        <span class="date">Окончил в 1999 г. | Очная форма</span>
+      </div>
+
+      <div class="education-item">
+       <strong>Ростовский государственный университет путей сообщения</strong><br>
+        <em>Магистр техники и технологии по направлению "Прикладная механика"</em><br>
+        <span class="date">Окончил в 2012 г. | Очная форма</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📚 Курсы и тренинги</h2>
+
+      <div class="course-item">
+        <strong>Тестировщик программного обеспечения</strong><br>
+        <em>КОМПЬЮТЕРНАЯ АКАДЕМИЯ TOP</em><br>
+        <span class="date">2025 г. | 12 месяцев</span>
+      </div>
+
+      <div class="course-item">
+        <strong>Python разработка</strong><br>
+        <em>КОМПЬЮТЕРНАЯ АКАДЕМИЯ TOP</em><br>
+        <span class="date">2025 г. | 12 месяцев</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>💼 Опыт работы</h2>
+
+      <div class="experience-item">
+        <strong>И.П. Урюпин — Инженер</strong><br>
+        <span class="date">2000 г. — настоящее время</span>
+        <ul>
+          <li>Обеспечение соблюдения технологического процесса</li>
+          <li>Контроль соответствия принятым стандартам качества</li>
+          <li>Выявление и устранение повреждений оборудования</li>
+          <li>Исследование образцов продукции</li>
+          <li>Контроль и определение затрат на производство</li>
+          <li>Анализ причин брака</li>
+          <li>Разработка мер по модернизации производства</li>
+          <li>Создание должностных инструкций для работников цеха</li>
+          <li>Обучение сотрудников производства</li>
+          <li>Эксплуатационный контроль оборудования</li>
+          <li>Анализ экономической эффективности производства</li>
+          <li>Разработка технической документации</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Навыки</h2>
+      <div class="skills-container">
+        <span class="skill-tag tech">Python</span>
+        <span class="skill-tag tech">JavaScript</span>
+        <span class="skill-tag tech">TypeScript</span>
+        <span class="skill-tag tech">HTML / CSS</span>
+        <span class="skill-tag tech">React</span>
+        <span class="skill-tag tech">SQL</span>
+        <span class="skill-tag tech">Excel</span>
+        <span class="skill-tag tech">Тестирование ПО</span>
+        <span class="skill-tag tech">Автоматизация тестирования</span>
+        <span class="skill-tag soft">Аналитическое мышление</span>
+        <span class="skill-tag soft">Тайм-менеджмент</span>
+        <span class="skill-tag soft">Коммуникабельность</span>
+        <span class="skill-tag soft">Обучаемость</span>
+        <span class="skill-tag soft">Ответственность</span>
+        <span class="skill-tag">Водительские права (B)</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🧾 Дополнительно</h2>
+      <ul>
+        <li><strong>Гражданство:</strong> Российская Федерация</li>
+        <li><strong>Дата рождения:</strong> 26.09.1977</li>
+        <li><strong>Пол:</strong> Мужской</li>
+        <li><strong>Наличие водительских прав (категории):</strong> “B”</li>
+        <li><strong>Семейное положение:</strong> Женат, есть дети</li>
+        <li><strong>Вредные привычки:</strong> Отсутствуют</li>
+      </ul>
+    </div>
+
+    <footer>
+      &copy; 2025 Андрей Бондарчук — Все права защищены. Контакты: andreybond77@mail.ru
+    </footer>
+  </div>
+</body>
+</html>
