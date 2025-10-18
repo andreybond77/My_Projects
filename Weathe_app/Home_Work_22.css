@@ -1,0 +1,236 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: #fff;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 100%;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 70%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    
+}
+
+/* Стили для карточек */
+.card {
+    width: 70%;
+    max-height: 250px; /* Ограничение высоты карточки */
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    overflow-y: auto; /* Прокрутка при переполнении */
+}
+
+.card.hidden {
+    display: none;
+}
+
+.card h2, .card h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Стили для прогноза */
+#forecastContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+    justify-content: center;
+    width: 70%;
+    max-height: 100px; /* Ограничение высоты контейнера прогноза */
+    overflow-y: auto; /* Прокрутка при переполнении */
+}
+
+.forecast-card {
+    flex: 1 1 calc(50% - 20px); /* Две карточки в ряд на широких экранах */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для airQualityCard */
+#airQualityCard {
+    width: 70%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#airQualityCard h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#airQualityCard p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #fff;
+}
+/* Стили для заголовков таблицы */
+thead > tr > th {
+    background-color: #41d499; /* Цвет фона для заголовков */
+    border: 2px double black; /* Двойная граница для заголовков */
+    padding: 8px; /* Отступы внутри ячеек */
+}
+thead > tr > th > i {
+    color: aqua;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .card {
+        max-height: 250px; /* Уменьшенная высота карточек */
+    }
+
+    #forecastContainer {
+        max-height: 100px; /* Уменьшенная высота контейнера прогноза */
+    }
+
+    .forecast-card {
+        flex: 1 1 100%; /* Одна карточка в ряд на маленьких экранах */
+    }
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили для спиннера */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
