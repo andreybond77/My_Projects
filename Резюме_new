@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Андрей Бондарчук — Сетевой инженер | Python-разработчик | QA</title>
+  <style>
+    :root {
+      --primary: #1e2a3a;
+      --secondary: #0f5b7a;
+      --accent: #e67e22;
+      --light: #f4f7fa;
+      --dark: #1a2a32;
+      --gray: #6c7a89;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Roboto', 'Noto Sans', system-ui, sans-serif;
+      line-height: 1.5;
+      color: #2c3e4f;
+      background: #eef2f5;
+      padding: 2rem 1rem;
+    }
+
+    .resume {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #0b3b4f);
+      color: white;
+      padding: 2.2rem 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-top: 0.25rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      margin-top: 0.75rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 1.2rem;
+    }
+
+    .contact-info a, .contact-info span {
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    .section {
+      padding: 1.8rem 2rem;
+      border-bottom: 1px solid #e9edf2;
+    }
+
+    .section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .card {
+      background: #f9fbfd;
+      padding: 1rem 1.2rem;
+      border-radius: 16px;
+      transition: all 0.2s;
+      border: 1px solid #eef2f8;
+    }
+
+    .date {
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      background: #eef2fa;
+      color: #1f3b4c;
+      padding: 5px 14px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin: 0.2rem 0.3rem;
+      transition: 0.1s ease;
+    }
+
+    .skill-tag.primary {
+      background: var(--secondary);
+      color: white;
+    }
+
+    .skill-tag.network {
+      background: #d4e7f1;
+      color: #0c4e6e;
+      border-left: 3px solid #0f5b7a;
+    }
+
+    .about-text {
+      background: #f6fafe;
+      padding: 1.2rem 1.5rem;
+      border-radius: 24px;
+      font-size: 1rem;
+      border-left: 5px solid var(--accent);
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #cddfe7;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 700px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .section {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="resume">
+  <header>
+    <h1>Андрей Анатольевич Бондарчук</h1>
+    <div class="subtitle">Сетевой инженер / Python-разработчик / QA-специалист</div>
+    <div class="badge">Инженерное мышление + IT-компетенции</div>
+    <div class="contact-info">
+      <span>📞 +7 (908) 503-77-59</span>
+      <span>✉️ <a href="mailto:andreybond77@mail.ru">andreybond77@mail.ru</a></span>
+      <span>💻 <a href="https://github.com/andreybond77" target="_blank">github.com/andreybond77</a></span>
+      <span>📍 Ростов-на-Дону</span>
+    </div>
+  </header>
+
+  <div class="section">
+    <h2>🎯 Обо мне</h2>
+    <div class="about-text">
+      Инженер с многолетним опытом управления качеством, оптимизации процессов и технической документации. Целенаправленно развиваюсь в IT: сетевые технологии (Cisco, VLAN, OSPF, NAT), автоматизация тестирования, Python-разработка. Умею системно анализировать сложные инфраструктуры, быстро осваивать новое и находить нестандартные решения. Стремлюсь применить свой инженерный опыт и навыки администрирования сетей в позиции сетевого инженера или инженера по тестированию в инфраструктурных проектах.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🛠️ Ключевые навыки</h2>
+    <div>
+      <span class="skill-tag primary">Python</span>
+      <span class="skill-tag">JavaScript / TypeScript</span>
+      <span class="skill-tag">HTML / CSS / React</span>
+      <span class="skill-tag">SQL (PostgreSQL, SQLite)</span>
+      <span class="skill-tag">API тестирование (Postman)</span>
+      <span class="skill-tag network">Cisco Packet Tracer</span>
+      <span class="skill-tag network">VLAN, Trunk, STP, EtherChannel</span>
+      <span class="skill-tag network">OSPF, HSRP, статическая маршрутизация</span>
+      <span class="skill-tag network">NAT / PAT, ACL, Port Security</span>
+      <span class="skill-tag network">Модель OSI, TCP/IP, DHCP, DNS</span>
+      <span class="skill-tag">Linux (Ubuntu, базовые команды)</span>
+      <span class="skill-tag">Git / GitHub</span>
+      <span class="skill-tag">Тестирование ПО (ручное / автоматизированное)</span>
+      <span class="skill-tag">Анализ требований, тест-дизайн, баг-трекинг (Jira)</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📡 Сетевые компетенции (практика в Packet Tracer)</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="date">✔️ Базовая инфраструктура</div>
+        <p>Настройка маршрутизаторов и коммутаторов Cisco (2911, 3560, 2960). Построение топологий «офис-филиал», корпоративные сети с VLAN, маршрутизацией между VLAN (Router-on-a-stick).</p>
+      </div>
+      <div class="card">
+        <div class="date">✔️ Протоколы динамической маршрутизации</div>
+        <p>OSPF (single area, multi area), статическая маршрутизация, маршруты по умолчанию, резервирование шлюза HSRP.</p>
+      </div>
+      <div class="card">
+        <div class="date">✔️ Безопасность и доступ в интернет</div>
+        <p>NAT/PAT, стандартные и расширенные ACL, Port Security, настройка trunk, EtherChannel, межсетевое взаимодействие между удалёнными сетями.</p>
+      </div>
+      <div class="card">
+        <div class="date">✔️ Диагностика и документация</div>
+        <p>Проверка связности (ping, traceroute), анализ таблиц маршрутизации, Wireshark (базовый анализ), составление схем и технической документации.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>💼 Опыт работы</h2>
+    <div class="card" style="background: white; padding: 0;">
+      <div style="margin-bottom: 0.8rem;">
+        <strong>И.П. Урюпин — Инженер</strong><br>
+        <span class="date">2000 — настоящее время</span>
+      </div>
+      <ul>
+        <li>Контроль качества, анализ причин дефектов, разработка корректирующих действий.</li>
+        <li>Оптимизация технологических процессов, внедрение мер по модернизации (сокращение брака на 15%).</li>
+        <li>Разработка и ведение технической документации, обучение персонала, координация работы.</li>
+        <li>Анализ экономической эффективности и внедрение стандартов управления качеством.</li>
+      </ul>
+      <div style="margin-top: 0.8rem; background: #eef3fc; padding: 0.6rem 1rem; border-radius: 14px;">
+        <strong>🏆 Достижение:</strong> Применил системный подход к управлению качеством, что позволило перенести инженерные практики в IT: структурированное тестирование, работа с требованиями, документирование сетевых решений.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎓 Образование & курсы</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="date">1999</div>
+        <strong>Донской государственный технический университет</strong><br>
+        Инженер, «Технология машиностроения»
+      </div>
+      <div class="card">
+        <div class="date">2012</div>
+        <strong>Ростовский государственный университет путей сообщения</strong><br>
+        Магистр, «Прикладная механика»
+      </div>
+      <div class="card">
+        <div class="date">2025</div>
+        <strong>Тестировщик ПО</strong><br>
+        Компьютерная Академия TOP
+      </div>
+      <div class="card">
+        <div class="date">2025</div>
+        <strong>Python разработка</strong><br>
+        Компьютерная Академия TOP
+      </div>
+    </div>
+    <div style="margin-top: 1rem;">
+      <span class="skill-tag">🔥 Самостоятельные проекты:</span>
+      <span class="skill-tag">Cisco Packet Tracer (корпоративная сеть, VLAN, OSPF, NAT, HSRP)</span>
+      <span class="skill-tag">Автоматизация тестирования (Python + pytest)</span>
+      <span class="skill-tag">Git, GitHub, работа с SQL</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🧾 Дополнительно</h2>
+    <div class="grid-2">
+      <div><strong>Гражданство:</strong> РФ</div>
+      <div><strong>Водительские права:</strong> категория B</div>
+      <div><strong>Семейное положение:</strong> женат, есть дети</div>
+      <div><strong>Английский язык:</strong> технический (чтение документации, переписка)</div>
+      <div><strong>Личные качества:</strong> системное мышление, ответственность, умение работать с большим объёмом информации, быстрая обучаемость</div>
+    </div>
+  </div>
+
+  <footer>
+    Андрей Бондарчук — 2025. Все права защищены. Обновлённое резюме с акцентом на сетевые технологии и инженерный подход.
+  </footer>
+</div>
+</body>
+</html>
