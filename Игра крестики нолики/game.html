@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики | Игра</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nav-links {
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: #4a90e2;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .difficulty-selector {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .difficulty-selector label {
+            font-weight: bold;
+            color: #333;
+        }
+        .difficulty-selector select {
+            padding: 8px 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid #4a90e2;
+            background: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .difficulty-selector select:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="nav-links">
+            <a href="index.html">🏠 Главная</a> |
+            <a href="stats.html">📊 Статистика</a>
+        </div>
+        <h1>🎮 Крестики-нолики</h1>
+        <p class="subtitle">Игрок — ❌ | Компьютер — ⭕</p>
+        
+        <div class="difficulty-selector">
+            <label>🎯 Сложность:</label>
+            <select id="difficultySelect">
+                <option value="easy">🟢 Новичок </option>
+                <option value="hard">🔴 Продвинутый </option>
+            </select>
+        </div>
+        
+        <div class="board" id="board"></div>
+        <div class="status" id="status">Ваш ход (❌)</div>
+        <button class="reset-btn" id="resetBtn">🔄 Новая игра</button>
+    </div>
+    <div class="winner-line" id="winnerLine"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики | Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .rules-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            background: rgba(255,255,255,0.9);
+            padding: 30px;
+            border-radius: 20px;
+        }
+        .rules-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .rules-container ul {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .nav-btn {
+            background: #4a90e2;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav-btn:hover {
+            background: #357abd;
+            transform: scale(1.05);
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .title h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container" style="max-width: 600px;">
+        <div class="title">
+            <h1>🎮 Крестики-нолики</h1>
+            <p>Играй против компьютера!</p>
+        </div>
+        
+        <div class="rules-container">
+            <h2>📜 Правила игры</h2>
+            <ul>
+                <li>Вы играете <strong>❌ (крестиками)</strong>, компьютер — <strong>⭕ (ноликами)</strong></li>
+                <li>Первый ход всегда за вами</li>
+                <li><strong>Новичок:</strong> компьютер ходит случайно</li>
+                <li><strong>Продвинутый:</strong> компьютер занимает центр, выигрывает и блокирует вас</li>
+                <li>Побеждает тот, кто первым соберёт <strong>3 в ряд</strong> (горизонталь, вертикаль, диагональ)</li>
+                <li>Если все клетки заполнены — <strong>ничья</strong></li>
+                <li>Статистика игр сохраняется в браузере</li>
+            </ul>
+            <div class="btn-group">
+                <a href="game.html" class="nav-btn">🎯 Начать игру</a>
+                <a href="stats.html" class="nav-btn">📊 Статистика</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

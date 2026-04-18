@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики | Статистика</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .stats-container {
+            text-align: center;
+        }
+        .stats-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 20px;
+            min-width: 150px;
+        }
+        .stat-card h2 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .stat-card .number {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .reset-stats {
+            background: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 20px;
+        }
+        .reset-stats:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        .nav-links {
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: #4a90e2;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="nav-links">
+            <a href="index.html">🏠 Главная</a> |
+            <a href="game.html">🎮 Игра</a>
+        </div>
+        <h1>📊 Статистика игр</h1>
+        
+        <div class="stats-container">
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h2>🏆 Победы игрока</h2>
+                    <p class="number" id="playerWins">0</p>
+                </div>
+                <div class="stat-card">
+                    <h2>🤖 Победы компьютера</h2>
+                    <p class="number" id="computerWins">0</p>
+                </div>
+                <div class="stat-card">
+                    <h2>🤝 Ничьи</h2>
+                    <p class="number" id="draws">0</p>
+                </div>
+            </div>
+            <button class="reset-stats" id="resetStatsBtn">🗑 Сбросить статистику</button>
+        </div>
+    </div>
+    <script src="stats.js"></script>
+</body>
+</html>
